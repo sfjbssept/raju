@@ -39,7 +39,7 @@ public class Product implements Serializable {
 	}
 	
 	
-	public Product(int productId, String productName, Integer productPrice, String productBrand,
+	public Product(Integer productId, String productName, Integer productPrice, String productBrand,
 			String productCategoray) {
 		super();
 		this.productId = productId;
