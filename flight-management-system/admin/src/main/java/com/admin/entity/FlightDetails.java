@@ -16,19 +16,24 @@ public class FlightDetails {
 	private String airlineName;
 	private String flyFrom;
 	private String flyto;
-	private Date satrtDateTime;
-	private Date endDateTime;
+	private String satrtDateTime;
+	private String endDateTime;
 	private String instrumentUsed;
 	private Integer totalNoBSeat;
 	private Integer toTalNoESeat;
 	private Double ticketCost;
 	private Integer numberOfrow;
 	private String scheduledDay;
+	
+
+	
+	
+	
 	public FlightDetails() {
 		super();
 	}
-	public FlightDetails(Integer flightNumber, String airlineName, String flyFrom, String flyto, Date satrtDateTime,
-			Date endDateTime, String instrumentUsed, Integer totalNoBSeat, Integer toTalNoESeat, Double ticketCost,
+	public FlightDetails(Integer flightNumber, String airlineName, String flyFrom, String flyto, String satrtDateTime,
+			String endDateTime, String instrumentUsed, Integer totalNoBSeat, Integer toTalNoESeat, Double ticketCost,
 			Integer numberOfrow, String scheduledDay) {
 		super();
 		this.flightNumber = flightNumber;
@@ -68,16 +73,16 @@ public class FlightDetails {
 	public void setFlyto(String flyto) {
 		this.flyto = flyto;
 	}
-	public Date getSatrtDateTime() {
+	public String getSatrtDateTime() {
 		return satrtDateTime;
 	}
-	public void setSatrtDateTime(Date satrtDateTime) {
+	public void setSatrtDateTime(String satrtDateTime) {
 		this.satrtDateTime = satrtDateTime;
 	}
-	public Date getEndDateTime() {
+	public String getEndDateTime() {
 		return endDateTime;
 	}
-	public void setEndDateTime(Date endDateTime) {
+	public void setEndDateTime(String endDateTime) {
 		this.endDateTime = endDateTime;
 	}
 	public String getInstrumentUsed() {

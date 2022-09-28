@@ -8,11 +8,11 @@
 		<version>2.7.4</version>
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
-	<groupId>com.admin</groupId>
-	<artifactId>admin</artifactId>
+	<groupId>com.user</groupId>
+	<artifactId>user</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>admin</name>
-	<description>Microservice of admin for Flight management System</description>
+	<name>user</name>
+	<description>Eureak Server for the flight Management</description>
 	<properties>
 		<java.version>11</java.version>
 		<spring-cloud.version>2021.0.4</spring-cloud.version>
