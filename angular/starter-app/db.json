@@ -1,22 +1,6 @@
 {
   "students": [
     {
-      "firstname": "Ram",
-      "lastname": "Yadav",
-      "class": 12,
-      "age": 15,
-      "id": 1
-    },
-    {
-      "firstName": "Riyansh",
-      "lastName": "Yadav",
-      "age": 6,
-      "class": 1,
-      "subject": "PCM",
-      "gender": "Male",
-      "id": 2
-    },
-    {
       "firstName": "Riyansh",
       "lastName": "Yadav",
       "age": 6,
@@ -33,6 +17,24 @@
       "subject": "PCB,PCM",
       "gender": "Male",
       "id": 4
+    },
+    {
+      "firstName": "Swety",
+      "lastName": "Khan",
+      "age": 15,
+      "class": 10,
+      "subject": "PCB,PCM",
+      "gender": "Female",
+      "id": 5
+    },
+    {
+      "firstName": "Om",
+      "lastName": "Yadav",
+      "age": 18,
+      "class": 12,
+      "subject": "PCMB",
+      "gender": "Male",
+      "id": 6
     }
   ]
 }

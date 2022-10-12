@@ -4,10 +4,11 @@
 <ol class="list-group list-group-numbered">
     <li class="list-group-item d-flex justify-content-between align-items-start" *ngFor="let s of students ; index as i">
       <div class="ms-2 me-auto">
-        <div class="fw-bold">{{s.firstName}}{{s.lastName}}</div>
+        <div class="fw-bold">{{s.firstName | uppercase}}  {{s.lastName |uppercase}}</div>
         Student has subject combination of {{s.subject}}
       </div>
-      <span class="badge bg-primary rounded-pill">14</span>
+      
+      <button type="submit"  (click)="deleteStudent(s,i)" style="background-color:red ;" class="btn-close" aria-label="close"></button>
     </li>
     
   </ol>

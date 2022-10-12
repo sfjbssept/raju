@@ -12,7 +12,13 @@ export class RegisteredstudentComponent implements OnInit {
 
   students:Student[]=[];
 
-  
+  deleteStudent(student ,index){
+  const observable=this.studentService.deleteStudent(student);
+  observable.subscribe((responce:any)=>{
+  console.log(responce)
+  this.students.slice(index,1)
+  });
+  }
 
   constructor(public studentService: StudentsService) { }
 
