@@ -24,6 +24,15 @@
       "subject": "PCM",
       "gender": "Male",
       "id": 3
+    },
+    {
+      "firstName": "Ayansh",
+      "lastName": "Yadav",
+      "age": 30,
+      "class": 12,
+      "subject": "PCB,PCM",
+      "gender": "Male",
+      "id": 4
     }
   ]
 }

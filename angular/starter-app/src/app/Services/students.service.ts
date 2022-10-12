@@ -11,5 +11,8 @@ export class StudentsService {
     return this.http.post(BASE_URL,student);
   }
 
+  getStudent(){
+    return this.http.get(BASE_URL);
+  }
   constructor(public http:HttpClient) { }
 }

@@ -2,25 +2,12 @@
 <br/>
 
 <ol class="list-group list-group-numbered">
-    <li class="list-group-item d-flex justify-content-between align-items-start">
+    <li class="list-group-item d-flex justify-content-between align-items-start" *ngFor="let s of students ; index as i">
       <div class="ms-2 me-auto">
-        <div class="fw-bold">Subheading</div>
-        Content for list item
+        <div class="fw-bold">{{s.firstName}}{{s.lastName}}</div>
+        Student has subject combination of {{s.subject}}
       </div>
       <span class="badge bg-primary rounded-pill">14</span>
     </li>
-    <li class="list-group-item d-flex justify-content-between align-items-start">
-      <div class="ms-2 me-auto">
-        <div class="fw-bold">Subheading</div>
-        Content for list item
-      </div>
-      <span class="badge bg-primary rounded-pill">14</span>
-    </li>
-    <li class="list-group-item d-flex justify-content-between align-items-start">
-      <div class="ms-2 me-auto">
-        <div class="fw-bold">Subheading</div>
-        Content for list item
-      </div>
-      <span class="badge bg-primary rounded-pill">14</span>
-    </li>
+    
   </ol>
