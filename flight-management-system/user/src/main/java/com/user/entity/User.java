@@ -60,6 +60,19 @@ public class User {
 	public void setAge(Integer age) {
 		this.age = age;
 	}
+
+	public User(Integer userID, String userEmail, String userName, String gender, Integer age) {
+		super();
+		this.userID = userID;
+		this.userEmail = userEmail;
+		this.userName = userName;
+		this.gender = gender;
+		this.age = age;
+	}
+
+	public User() {
+		super();
+	}
 	
 	
 	

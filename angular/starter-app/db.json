@@ -1,0 +1,29 @@
+{
+  "students": [
+    {
+      "firstname": "Ram",
+      "lastname": "Yadav",
+      "class": 12,
+      "age": 15,
+      "id": 1
+    },
+    {
+      "firstName": "Riyansh",
+      "lastName": "Yadav",
+      "age": 6,
+      "class": 1,
+      "subject": "PCM",
+      "gender": "Male",
+      "id": 2
+    },
+    {
+      "firstName": "Riyansh",
+      "lastName": "Yadav",
+      "age": 6,
+      "class": 1,
+      "subject": "PCM",
+      "gender": "Male",
+      "id": 3
+    }
+  ]
+}
