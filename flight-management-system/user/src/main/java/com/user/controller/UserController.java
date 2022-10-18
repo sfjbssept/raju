@@ -1,7 +1,6 @@
 package com.user.controller;
 
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.http.HttpEntity;
 import org.springframework.http.HttpHeaders;
@@ -21,11 +20,13 @@ public class UserController {
 	@Autowired
 	private UserService userService;
 	
-	@Autowired(required=true)
-	private RestTemplate restTemplate;
+	
+	  @Autowired 
+	  private RestTemplate restTemplate;
+	 
 	
 	@Value("${admin-service}") 
-	  String url;
+	private String url;
 	 
 	
 	@PostMapping("/registeruser")
