@@ -1,1 +1,7 @@
-<p>home works!</p>
+<ul class="list-group">
+    <li class="list-group-item" *ngFor="let f of flightDetails ; index as i">{{f.flightNumber}},{{f.airlineName}},
+        {{f.flyFrom}},{{f.flyto}},{{f.satrtDateTime}},{{f.endDateTime}},{{f.instrumentUsed}},
+        {{f.totalNoBSeat}},{{f.toTalNoESeat}},{{f.ticketCost}},{{f.numberOfrow}},{{f.scheduledDay}}
+    </li>
+    
+  </ul>

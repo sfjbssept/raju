@@ -18,7 +18,7 @@ export class HomeComponent implements OnInit {
     const promise=this.adminService.getAllFlght();
     promise.subscribe((responce)=>{
     console.log(responce);
-    //this.students = responce as Student[];
+    this.flightDetails = responce as FlightDetails[];
     });
   }
 

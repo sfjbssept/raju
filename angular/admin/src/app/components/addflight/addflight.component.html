@@ -1,1 +1,58 @@
-<p>addflight works!</p>
+
+<form class="row g-3 needs-validation" novalidate>
+<div class="input-group mb-3">
+    <span class="input-group-text" id="basic-addon1">@</span>
+    <input type="text" class="form-control" placeholder="Flight Number" [ngModelOptions]="{standalone: true}" [(ngModel)]="flightDetails.flightNumber" aria-describedby="basic-addon1">
+</div>
+
+<div class="input-group mb-3">
+    <span class="input-group-text" id="basic-addon1">@</span>
+    <input type="text" class="form-control" placeholder="AirLine Name" [ngModelOptions]="{standalone: true}" [(ngModel)]="flightDetails.airlineName" aria-describedby="basic-addon1">
+</div>
+<div class="input-group mb-3">
+    <span class="input-group-text" id="basic-addon1">@</span>
+    <input type="text" class="form-control" placeholder="Fly from" [ngModelOptions]="{standalone: true}" [(ngModel)]="flightDetails.flyFrom" aria-describedby="basic-addon1">
+</div>
+<div class="input-group mb-3">
+    <span class="input-group-text" id="basic-addon1">@</span>
+    <input type="text" class="form-control" placeholder="Fly To" [ngModelOptions]="{standalone: true}" [(ngModel)]="flightDetails.flyto" aria-describedby="basic-addon1">
+</div>
+<div class="input-group mb-3">
+    <span class="input-group-text" id="basic-addon1">@</span>
+    <input type="text" class="form-control" placeholder="Start Date" [ngModelOptions]="{standalone: true}" [(ngModel)]="flightDetails.satrtDateTime" aria-describedby="basic-addon1">
+</div>
+<div class="input-group mb-3">
+    <span class="input-group-text" id="basic-addon1">@</span>
+    <input type="text" class="form-control" placeholder="End Date" [ngModelOptions]="{standalone: true}" [(ngModel)]="flightDetails.endDateTime" aria-describedby="basic-addon1">
+</div>
+<div class="input-group mb-3">
+    <span class="input-group-text" id="basic-addon1">@</span>
+    <input type="text" class="form-control" placeholder="Instrument Used" [ngModelOptions]="{standalone: true}" [(ngModel)]="flightDetails.instrumentUsed" aria-describedby="basic-addon1">
+</div>
+<div class="input-group mb-3">
+    <span class="input-group-text" id="basic-addon1">@</span>
+    <input type="text" class="form-control" placeholder="Total number of business Class" [ngModelOptions]="{standalone: true}" [(ngModel)]="flightDetails.totalNoBSeat" aria-describedby="basic-addon1">
+</div>
+<div class="input-group mb-3">
+    <span class="input-group-text" id="basic-addon1">@</span>
+    <input type="text" class="form-control" placeholder="Total number of Economice Class" [ngModelOptions]="{standalone: true}" [(ngModel)]="flightDetails.toTalNoESeat" aria-describedby="basic-addon1">
+</div>
+<div class="input-group mb-3">
+    <span class="input-group-text" id="basic-addon1">@</span>
+    <input type="text" class="form-control" placeholder="Total price" [ngModelOptions]="{standalone: true}" [(ngModel)]="flightDetails.ticketCost" aria-describedby="basic-addon1">
+</div>
+<div class="input-group mb-3">
+    <span class="input-group-text" id="basic-addon1">@</span>
+    <input type="text" class="form-control" placeholder="Number of row" [ngModelOptions]="{standalone: true}"  [(ngModel)]="flightDetails.numberOfrow" aria-describedby="basic-addon1">
+</div>
+<div class="input-group mb-3">
+    <span class="input-group-text" id="basic-addon1">@</span>
+    <input type="text" class="form-control" placeholder="Scheduled Day"  [ngModelOptions]="{standalone: true}" [(ngModel)]="flightDetails.scheduledDay" aria-describedby="basic-addon1">
+</div>
+
+
+
+<div class="input-group mb-3">
+    <button (click)="save()" class="btn btn-primary" type="submit">Submit form</button>
+</div>
+</form>
