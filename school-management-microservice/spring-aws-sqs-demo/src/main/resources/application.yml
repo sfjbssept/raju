@@ -1,0 +1,10 @@
+cloud:
+  aws:
+    region:
+      static: us-east-1
+      auto: false
+    credentials:
+      access-key: AKIA4MFLODBGE4FKCG5J
+      secret-key: 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
+    end-point:
+      uri: https://sqs.us-east-1.amazonaws.com/850763061324/raju-queue

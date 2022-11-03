@@ -23,9 +23,41 @@ public class GroupingByFunction {
         Map<String, Map<Long, Long>> multipleFieldsMap=  employeesList.stream()
         		.collect(Collectors.groupingBy(Employee::getDesignation,Collectors.groupingBy(Employee::getSalary,Collectors.counting())));
         
-        System.out.println(multipleFieldsMap);
+        //System.out.println(multipleFieldsMap);
         
-
+        //employeesList.stream().collect(Collectors.summingLong(Employee::getSalary));
+        
+        long total = employeesList.stream().collect(
+        		   Collectors.summingLong(Employee::getSalary));
+        
+       // System.out.println(total);
+        
+        String str="Raju";
+        
+        StringBuilder builder= new StringBuilder(str);
+        
+        String reve=builder.reverse().toString();
+        if(str.equals(reve)) {
+        	System.out.println("Palidrom");
+        }else {
+        	System.out.println("Not palidropm");
+        }
+        
+      
+        
+        String rev="";
+        
+        for(int i=str.length()-1;i>=0;--i) {
+        	rev +=str.charAt(i);
+        }
+     System.out.println(rev);
+        
+   
+ 	
 	}
+	
+	
+	
+	
 
 }

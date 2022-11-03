@@ -1,4 +1,4 @@
-package com.spring.aws;
+package com.aws;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -8,19 +8,20 @@ import org.springframework.web.bind.annotation.RestController;
 
 @SpringBootApplication
 @RestController
-public class SpringAwsDeployApplication {
-	
-	@GetMapping("demo/aws")
-	public String demoASW() {
-		return "You are getting the data from AWS cloud";
+public class AwsDemoApplication {
+
+	public static void main(String[] args) {
+		SpringApplication.run(AwsDemoApplication.class, args);
 	}
 
+	@GetMapping("/hello")
+	public String helloWorld() {
+		return "hello my name is Nishant" ;
+	}
+	
 	@GetMapping("/{name}")
 	public String welcome(@PathVariable String name) {
-		return "Hi"+name;
-	}
-	public static void main(String[] args) {
-		SpringApplication.run(SpringAwsDeployApplication.class, args);
+		return "Hi " + name;
 	}
 
 }
