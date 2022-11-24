@@ -9,6 +9,9 @@ import { AddflightComponent } from './components/addflight/addflight.component';
 import { UpdateflightComponent } from './components/updateflight/updateflight.component';
 import { DeleteflightComponent } from './components/deleteflight/deleteflight.component';
 import { HomeComponent } from './components/home/home.component';
+import {MatCardModule} from '@angular/material/card';
+import {MatButtonModule} from '@angular/material/button';
+import {MatTableModule} from '@angular/material/table';
 
 @NgModule({
   declarations: [
@@ -23,7 +26,10 @@ import { HomeComponent } from './components/home/home.component';
     BrowserModule,
     AppRoutingModule,
     FormsModule,
-    HttpClientModule
+    HttpClientModule,
+    MatCardModule,
+    MatButtonModule,
+    MatTableModule
   ],
   providers: [],
   bootstrap: [AppComponent]

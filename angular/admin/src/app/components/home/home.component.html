@@ -1,7 +1,35 @@
 <ul class="list-group">
+    
     <li class="list-group-item" *ngFor="let f of flightDetails ; index as i">{{f.flightNumber}},{{f.airlineName}},
         {{f.flyFrom}},{{f.flyto}},{{f.satrtDateTime}},{{f.endDateTime}},{{f.instrumentUsed}},
         {{f.totalNoBSeat}},{{f.toTalNoESeat}},{{f.ticketCost}},{{f.numberOfrow}},{{f.scheduledDay}}
     </li>
     
   </ul>
+  <mat-card *ngFor="let f of flightDetails ; index as i">
+    <mat-card-header>
+      <mat-card-title>{{f.flightNumber}}</mat-card-title>
+      <mat-card-subtitle>{{f.airlineName}}</mat-card-subtitle>
+      <mat-card-subtitle>{{f.flyFrom}}</mat-card-subtitle>
+      <mat-card-subtitle>{{f.flyto}}</mat-card-subtitle>
+      <mat-card-subtitle>{{f.satrtDateTime}}</mat-card-subtitle>
+      <mat-card-subtitle>{{f.endDateTime}}</mat-card-subtitle>
+      <mat-card-subtitle>{{f.instrumentUsed}}</mat-card-subtitle>
+      <mat-card-subtitle>{{f.totalNoBSeat}}</mat-card-subtitle>
+      <mat-card-subtitle>{{f.ticketCost}}</mat-card-subtitle>
+      <mat-card-subtitle>{{f.numberOfrow}}</mat-card-subtitle>
+      <mat-card-subtitle>{{f.scheduledDay}}</mat-card-subtitle>
+      
+
+
+    </mat-card-header>
+    <mat-card-content>
+        Test
+      </mat-card-content>
+    <mat-card-actions align="end">
+      <button mat-raised-button color="primary">Show More</button>
+      <button mat-raised-button color="primary">Book Now</button>
+    </mat-card-actions>
+  </mat-card>
+
+ 
